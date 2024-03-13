@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js"></script>
+</head>
+<body>
+    <div id="container">
+        
+        <div id="nav">
+            <button onclick="show('game')" title="Go to the button">BUTTON</button>
+            <button onclick="show('shop')" title="Go to the shop">SHOP</button>
+            <button onclick="show('settings')" title="Go to the settings">SETTINGS</button>
+        </div>
+
+        <div id="stats">
+            <h3>Money Per Second: <span id="mps">0</span></h3>
+            <h3>Money Per Click: <span id="mpc">1</span></h3>
+        </div>
+
+        <div id="shop">
+            <div id="title">
+                <h1>THE SHOP</h1>
+            </div>
+            <div id="info">
+                <p>To buy an item just click on it!</p>
+            </div>
+            <div>
+                <ul id="items">
+                    <li>
+                        <button onclick="buy('mpc')">More money per click! (<span id="mpc_price">10</span>)</button>
+                    </li>
+                    
+                    <li>
+                        <button onclick="buy('mps')">More money per second! (<span id="mps_price">10</span>)</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="settings">
+            <div id="title">
+                <h1>THE SETTINGS</h1>
+            </div>
+            <div id="info">
+                <p>You can reset your progress here!</p>
+            </div>
+            <button onclick="reset_progress()">RESET!</button>
+        </div>
+
+        <div id="game">
+            <div id="title">
+                <h1>THE MONEY CLICKER</h1>
+            </div>
+            <div id="info">
+                <p>To play this game just click the button below!</p>
+            </div>
+            <div id="clicker">
+                <button onclick="add_money()">CLICK ME</button>
+            </div>
+        </div>
+        <br> <br>
+        <h1>Money: <span id="money">0</span></h1>
+    </div>
+</body>
+</html>

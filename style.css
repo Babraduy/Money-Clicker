@@ -1,0 +1,78 @@
+html, body
+{
+    background-color: rgb(230, 245, 245);
+    font-family: consolas, monospace;
+    font-size: x-large;
+    margin: 0px;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#container
+{
+    background-color: azure;
+    text-align: center;
+    color: cornflowerblue;
+    text-shadow: 0px 0px 1px black;
+    padding-bottom: 20px;
+}
+
+h1
+{
+    text-shadow: 1px 1px 2px black;
+}
+
+#nav
+{
+    background-color: cornflowerblue;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    text-decoration: none;
+    border: 5px solid rgb(80, 129, 217);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+button
+{
+    background-color: cornflowerblue;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    font-size: x-large;
+    border-radius: 10px;
+    border-color: cornflowerblue;
+    border-width: 10px;
+}
+
+#shop
+{
+    display: none;
+}
+
+#settings
+{
+    display: none;
+}
+
+#items
+{
+    list-style-type: none;
+}
+
+#stats
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 10px;
+}
