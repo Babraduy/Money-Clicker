@@ -15,22 +15,29 @@ else var mpc = 1;
 if (JSON.parse(localStorage.getItem("mpc_price")) !== null) var mpc_price = JSON.parse(localStorage.getItem("mpc_price"));
 else var mpc_price = 10;
 
+document.getElementById("money").innerHTML = money;
+document.getElementById("mps_price").innerHTML = mps_price;
+document.getElementById("mpc_price").innerHTML = mpc_price;
+document.getElementById("mps").innerHTML = mps;
+document.getElementById("mpc").innerHTML = mpc;
+
 function reset_progress() {
     money = 0;
     mps = 0;
     mpc = 1;
     mps_price = 10;
     mpc_price = 10;
-}
-
-setInterval(() => {
-    money+=mps;
     document.getElementById("money").innerHTML = money;
     document.getElementById("mps_price").innerHTML = mps_price;
     document.getElementById("mpc_price").innerHTML = mpc_price;
     document.getElementById("mps").innerHTML = mps;
     document.getElementById("mpc").innerHTML = mpc;
+}
 
+setInterval(() => {
+    money+=mps;
+    document.getElementById("money").innerHTML = money;
+    
     // save
     localStorage.setItem('money', JSON.stringify(money));
     localStorage.setItem('mpc', JSON.stringify(mpc));
