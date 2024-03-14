@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js"></script>
+</head>
+<body>
+    <div id="container">
+
+        <div id="nav">
+            <button onclick="show('game')" title="Idź do przyciska">PRZYCISK</button>
+            <button onclick="show('shop')" title="Idź do sklepa">SKLEP</button>
+            <button onclick="show('settings')" title="Idź do ustawień">USTAWIENIA</button>
+        </div>
+
+        <div id="stats">
+            <h3>Pieniądze Na Sekundę: <span id="mps">0</span></h3>
+            <h3>Pieniądze Na Klik: <span id="mpc">1</span></h3>
+        </div>
+
+        <div id="shop">
+            <div id="title">
+                <h1>SKLEP</h1>
+            </div>
+            <div id="info">
+                <p>Żeby kupić coś, naciśnij na to!</p>
+            </div>
+            <div>
+                <ul id="items">
+                    <li>
+                        <button onclick="buy('mpc')">Więcej pieniędzy na klik! (<span id="mpc_price">10</span>)</button>
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <button onclick="buy('mps')">Więcej pieniędzy na sekundę! (<span id="mps_price">10</span>)</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="settings">
+            <div id="title">
+                <h1>USTAWIENIA</h1>
+            </div>
+            <div id="info">
+                <p>Możesz zresetować swój progres lub włączyć "dark mode"!</p>
+            </div>
+            <button onclick="reset_progress()">ZRESETOWAĆ!</button>
+            <button onclick="dark_mode()">DARK MODE</button>
+        </div>
+
+        <div id="game">
+            <div id="title">
+                <h1>THE MONEY CLICKER</h1>
+            </div>
+            <div id="info">
+                <p>Żeby grać w tą grę klikaj przycisk poniżej!</p>
+            </div>
+            <div id="clicker">
+                <button onclick=add_money()>NACIŚNIJ MNIE</button>
+            </div>
+        </div>
+        <br> <br>
+        <h1>Pieniądze: <span id="money">0</span></h1>
+    </div>
+</body>
+</html>
