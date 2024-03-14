@@ -76,3 +76,9 @@ button
     justify-content: space-between;
     padding: 10px;
 }
+
+#button_active
+{
+    background-color: rgb(120, 169, 255);
+    border-color: rgb(120, 169, 255);
+}
