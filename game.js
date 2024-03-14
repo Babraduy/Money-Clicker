@@ -1,18 +1,18 @@
-if (localStorage.getItem("money")) var money = parseInt(localStorage.getItem("money"));
+if (localStorage.getItem("money")) var money = JSON.parse(localStorage.getItem("money"));
 else var money = 0;
 
 // mps - money per second
-if (localStorage.getItem("mps")) var mps = parseInt(localStorage.getItem("mps"));
+if (localStorage.getItem("mps")) var mps = JSON.parse(localStorage.getItem("mps"));
 else var mps = 0;
 
-if (localStorage.getItem("mps_price")) var mps_price = parseInt(localStorage.getItem("mps_price"));
+if (localStorage.getItem("mps_price")) var mps_price = JSON.parse(localStorage.getItem("mps_price"));
 else var mps_price = 10;
 
 // mpc - money per click
-if (localStorage.getItem("mpc")) var mpc = parseInt(localStorage.getItem("mpc"));
+if (localStorage.getItem("mpc")) var mpc = JSON.parse(localStorage.getItem("mpc"));
 else var mpc = 0;
 
-if (localStorage.getItem("mpc_price")) var mpc_price = parseInt(localStorage.getItem("mpc_price"));
+if (localStorage.getItem("mpc_price")) var mpc_price = JSON.parse(localStorage.getItem("mpc_price"));
 else var mpc_price = 10;
 
 function reset_progress() {
@@ -32,11 +32,11 @@ setInterval(() => {
     document.getElementById("mpc").innerHTML = mpc;
 
     // save
-    localStorage.setItem('money', money);
-    localStorage.setItem('mpc', mpc);
-    localStorage.setItem('mps', mps);
-    localStorage.setItem('mpc_price', mpc_price);
-    localStorage.setItem('mps_price', mps_price);
+    localStorage.setItem('money', JSON.stringify(money));
+    localStorage.setItem('mpc', JSON.stringify(mpc));
+    localStorage.setItem('mps', JSON.stringify(mps));
+    localStorage.setItem('mpc_price', JSON.stringify(mpc_price));
+    localStorage.setItem('mps_price', JSON.stringify(mps_price));
 }, 1000)
 
 function add_money() {
