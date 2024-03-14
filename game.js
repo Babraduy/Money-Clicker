@@ -78,3 +78,29 @@ function buy(name) {
         document.getElementById("mpc").innerHTML = mpc;
     }
 }
+
+function dark_mode() {
+    for (var i=0; i<document.getElementsByTagName("html").length; i++) {
+        document.getElementsByTagName("html")[i].style.backgroundColor = '#505f5f';
+    }
+    for (var i=0; i<document.getElementsByTagName("body").length; i++) {
+        document.getElementsByTagName("body")[i].style.backgroundColor = '#505f5f';
+    }
+    for (var i=0; i<document.getElementsByTagName("a").length; i++) {
+        document.getElementsByTagName("a")[i].style.textShadow = '0px 0px 5px white';
+    }
+    for (var i=0; i<document.getElementsByTagName("button").length; i++) {
+        document.getElementsByTagName("button")[i].style.backgroundColor = 'rgb(50, 99, 187)';
+        document.getElementsByTagName("button")[i].style.borderColor = 'rgb(50, 99, 187)';
+    }
+    for (var i=0; i<document.getElementsByTagName("h1").length; i++) {
+        document.getElementsByTagName("h1")[i].style.backgroundColor = '1px 1px 2px white';
+    }
+    for (var i=0; i<document.getElementsByTagName("h2").length; i++) {
+        document.getElementsByTagName("h2")[i].style.textShadow = '1px 1px 2px white';
+    }
+
+    document.getElementById("container").style.backgroundColor = 'rgb(90, 105, 105)';
+    document.getElementById("container").style.color = 'rgb(50, 99, 187)';
+    
+}
