@@ -1,5 +1,5 @@
 if (localStorage.getItem("money") !== null) var money = JSON.parse(localStorage.getItem("money"));
-else var money = 0;
+else var money = 0; 
 
 // mps - money per second
 if (localStorage.getItem("mps") !== null) var mps = JSON.parse(localStorage.getItem("mps"));
