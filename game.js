@@ -37,7 +37,7 @@ function reset_progress() {
 setInterval(() => {
     money+=mps;
     document.getElementById("money").innerHTML = money;
-    
+
     // save
     localStorage.setItem('money', JSON.stringify(money));
     localStorage.setItem('mpc', JSON.stringify(mpc));
