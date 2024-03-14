@@ -40,15 +40,13 @@ setInterval(() => {
 
     // save
     localStorage.setItem('money', JSON.stringify(money));
-    localStorage.setItem('mpc', JSON.stringify(mpc));
-    localStorage.setItem('mps', JSON.stringify(mps));
-    localStorage.setItem('mpc_price', JSON.stringify(mpc_price));
-    localStorage.setItem('mps_price', JSON.stringify(mps_price));
 }, 1000)
 
 function add_money() {
     money+=mpc;
     document.getElementById("money").innerHTML = money;
+    
+    localStorage.setItem('money', JSON.stringify(money));
 }
 
 function show(name) {
@@ -62,19 +60,29 @@ function buy(name) {
     if (name == "mps" && money >= mps_price) {
         money -= mps_price;
         document.getElementById("money").innerHTML = money;
+        
+        localStorage.setItem('money', JSON.stringify(money));
 
         mps++;
         mps_price *= 2;
         document.getElementById("mps_price").innerHTML = mps_price;
         document.getElementById("mps").innerHTML = mps;
+        
+        localStorage.setItem('mps_price', JSON.stringify(mps_price));
+        localStorage.setItem('mps', JSON.stringify(mps));
     }
     if (name == "mpc" && money >= mpc_price) {
         money -= mpc_price;
         document.getElementById("money").innerHTML = money;
+        
+        localStorage.setItem('money', JSON.stringify(money));
 
         mpc++;
         mpc_price *= 3;
         document.getElementById("mpc_price").innerHTML = mpc_price;
         document.getElementById("mpc").innerHTML = mpc;
+        
+        localStorage.setItem('mpc_price', JSON.stringify(mpc_price));
+        localStorage.setItem('mpc', JSON.stringify(mpc));
     }
 }
