@@ -1,18 +1,18 @@
-if (JSON.parse(localStorage.getItem("money")) !== null) var money = JSON.parse(localStorage.getItem("money"));
+if (localStorage.getItem("money") !== null) var money = JSON.parse(localStorage.getItem("money"));
 else var money = 0;
 
 // mps - money per second
-if (JSON.parse(localStorage.getItem("mps")) !== null) var mps = JSON.parse(localStorage.getItem("mps"));
+if (localStorage.getItem("mps") !== null) var mps = JSON.parse(localStorage.getItem("mps"));
 else var mps = 0;
 
-if (JSON.parse(localStorage.getItem("mps_price")) !== null) var mps_price = JSON.parse(localStorage.getItem("mps_price"));
+if (localStorage.getItem("mps_price") !== null) var mps_price = JSON.parse(localStorage.getItem("mps_price"));
 else var mps_price = 10;
 
 // mpc - money per click
-if (JSON.parse(localStorage.getItem("mpc")) !== null) var mpc = JSON.parse(localStorage.getItem("mpc"));
+if (localStorage.getItem("mpc") !== null) var mpc = JSON.parse(localStorage.getItem("mpc"));
 else var mpc = 1;
 
-if (JSON.parse(localStorage.getItem("mpc_price")) !== null) var mpc_price = JSON.parse(localStorage.getItem("mpc_price"));
+if (localStorage.getItem("mpc_price") !== null) var mpc_price = JSON.parse(localStorage.getItem("mpc_price"));
 else var mpc_price = 10;
 
 function reset_progress() {
