@@ -17,6 +17,11 @@ else var mpc_price = 10;
 
 function reset_progress() {
     localStorage.clear();
+    money = 0;
+    mps = 0;
+    mpc = 1;
+    mps_price = 10;
+    mpc_price = 10;
 }
 
 setInterval(() => {
