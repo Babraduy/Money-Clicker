@@ -16,7 +16,6 @@ if (localStorage.getItem("mpc_price")) var mpc_price = parseInt(localStorage.get
 else var mpc_price = 10;
 
 function reset_progress() {
-    localStorage.clear();
     money = 0;
     mps = 0;
     mpc = 1;
