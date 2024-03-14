@@ -9,7 +9,7 @@ if (JSON.parse(localStorage.getItem("mps_price")) !== null) var mps_price = JSON
 else var mps_price = 10;
 
 // mpc - money per click
-if (JSON.parse(localStorage.getItem("mpc")) !== null) var mpc = JSON.parse(localStorage.getItem("mpc"));
+if (JSON.parse(localStorage.getItem("mpc")) !== null) var mpc = JSON.parse(loalStorage.getItem("mpc"));
 else var mpc = 1;
 
 if (JSON.parse(localStorage.getItem("mpc_price")) !== null) var mpc_price = JSON.parse(localStorage.getItem("mpc_price"));
