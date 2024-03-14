@@ -11,14 +11,14 @@
     <div id="container">
 
         <div id="nav">
-            <button onclick="show('game')" title="Idź do przyciska">PRZYCISK</button>
-            <button onclick="show('shop')" title="Idź do sklepa">SKLEP</button>
-            <button onclick="show('settings')" title="Idź do ustawień">USTAWIENIA</button>
+            <button onclick="show('game')" title="Przejdź do przycisku">PRZYCISK</button>
+            <button onclick="show('shop')" title="Przejdź do sklepu">SKLEP</button>
+            <button onclick="show('settings')" title="Przejdź do ustawień">USTAWIENIA</button>
         </div>
 
         <div id="stats">
             <h3>Pieniądze Na Sekundę: <span id="mps">0</span></h3>
-            <h3>Pieniądze Na Klik: <span id="mpc">1</span></h3>
+            <h3>Pieniądze Za Kliknięcie: <span id="mpc">1</span></h3>
         </div>
 
         <div id="shop">
@@ -26,12 +26,12 @@
                 <h1>SKLEP</h1>
             </div>
             <div id="info">
-                <p>Żeby kupić coś, naciśnij na to!</p>
+                <p>Aby kupić przedmiot, po prostu na niego kliknij!</p>
             </div>
             <div>
                 <ul id="items">
                     <li>
-                        <button onclick="buy('mpc')">Więcej pieniędzy na klik! (<span id="mpc_price">10</span>)</button>
+                        <button onclick="buy('mpc')">Więcej pieniędzy za kliknięcie! (<span id="mpc_price">10</span>)</button>
                     </li>
 
                     <br>
@@ -48,10 +48,11 @@
                 <h1>USTAWIENIA</h1>
             </div>
             <div id="info">
-                <p>Możesz zresetować swój progres lub włączyć "dark mode"!</p>
+                <p>Tutaj możesz zresetować swój progres, zmienić język lub włączyć tryb ciemny!</p>
             </div>
             <button onclick="reset_progress()">ZRESETOWAĆ!</button>
             <button onclick="dark_mode()">DARK MODE</button>
+            <p>Język: <a href="index.html"><button>ENGLISH</button></a>&Tab;<button id="button_active">POLSKI</button></p>
         </div>
 
         <div id="game">
@@ -59,10 +60,10 @@
                 <h1>THE MONEY CLICKER</h1>
             </div>
             <div id="info">
-                <p>Żeby grać w tą grę klikaj przycisk poniżej!</p>
+                <p>Aby grać w tą grę, po prostu zacznij klikać przycisk poniżej!</p>
             </div>
             <div id="clicker">
-                <button onclick=add_money()>NACIŚNIJ MNIE</button>
+                <button onclick=add_money()>KLIKNIJ NA MNIE</button>
             </div>
         </div>
         <br> <br>
