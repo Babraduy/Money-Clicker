@@ -78,22 +78,3 @@ function buy(name) {
         document.getElementById("mpc").innerHTML = mpc;
     }
 }
-
-function color_scheme(name) {
-    if (name == "dark") {
-    for (var i=0; i<document.getElementsByTagName("html").length; i++) {
-        document.getElementsByTagName("html")[i].style.backgroundColor = '#505f5f';
-    }
-    for (var i=0; i<document.getElementsByTagName("body").length; i++) {
-        document.getElementsByTagName("body")[i].style.backgroundColor = '#505f5f';
-    }
-    for (var i=0; i<document.getElementsByTagName("a").length; i++) {
-        document.getElementsByTagName("a")[i].style.textShadow = '0px 0px 5px white';
-    }
-    
-for (var i=0; i<document.getElementsByTagName("p").length; i++) {
-        document.getElementsByTagName("p")[i].style.textShadow = '0px 0px 2px white';
-    }
-    document.getElementById("container").style.backgroundColor = 'rgb(90, 105, 105)';
-}
-}
