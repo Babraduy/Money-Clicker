@@ -89,10 +89,6 @@ function dark_mode() {
     for (var i=0; i<document.getElementsByTagName("a").length; i++) {
         document.getElementsByTagName("a")[i].style.textShadow = '0px 0px 5px white';
     }
-    for (var i=0; i<document.getElementsByTagName("button").length; i++) {
-        document.getElementsByTagName("button")[i].style.backgroundColor = 'rgb(50, 99, 187)';
-        document.getElementsByTagName("button")[i].style.borderColor = 'rgb(50, 99, 187)';
-    }
     for (var i=0; i<document.getElementsByTagName("h1").length; i++) {
         document.getElementsByTagName("h1")[i].style.backgroundColor = '1px 1px 2px white';
     }
@@ -101,6 +97,6 @@ function dark_mode() {
     }
 
     document.getElementById("container").style.backgroundColor = 'rgb(90, 105, 105)';
-    document.getElementById("container").style.color = 'rgb(50, 99, 187)';
+    document.getElementById("container").style.textShadow = '0px 0px 1px white';
     
 }
