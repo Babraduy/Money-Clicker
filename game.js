@@ -89,14 +89,9 @@ function dark_mode() {
     for (var i=0; i<document.getElementsByTagName("a").length; i++) {
         document.getElementsByTagName("a")[i].style.textShadow = '0px 0px 5px white';
     }
-    for (var i=0; i<document.getElementsByTagName("h1").length; i++) {
-        document.getElementsByTagName("h1")[i].style.backgroundColor = '1px 1px 2px white';
-    }
-    for (var i=0; i<document.getElementsByTagName("h2").length; i++) {
-        document.getElementsByTagName("h2")[i].style.textShadow = '1px 1px 2px white';
-    }
-
-    document.getElementById("container").style.backgroundColor = 'rgb(90, 105, 105)';
-    document.getElementById("container").style.textShadow = '0px 0px 1px white';
     
+for (var i=0; i<document.getElementsByTagName("p").length; i++) {
+        document.getElementsByTagName("p")[i].style.textShadow = '0px 0px 2px white';
+    }
+    document.getElementById("container").style.backgroundColor = 'rgb(90, 105, 105)';
 }
